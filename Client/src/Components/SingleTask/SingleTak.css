@@ -1,0 +1,73 @@
+/* .Single-Page-Section 
+{
+    background: gray;
+} */
+
+.Single-Page-Container 
+{
+    margin: 3rem;
+    padding: 3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.Single-task-data
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Single-Page-Button
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Close-Button
+{
+    width: 8%;
+    padding: 5px 0;
+    background-color: rgb(70, 70, 144);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.Task-Description-and-Detail
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task-details-lists
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*---------------responsive-------------*/
+
+@media screen and (max-width:580px)
+{
+
+   .Close-Button 
+   {
+    width: 20%;
+   }
+}
+
+@media screen and (max-width:400px)
+{
+
+   .Close-Button 
+   {
+    width: 30%;
+   }
+}

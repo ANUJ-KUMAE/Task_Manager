@@ -1,0 +1,175 @@
+.Home-Page-Container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-sort-section {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+}
+
+.Add-Task-Button button {
+  width: 10%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-sort-section label,
+.search-sort-section select
+{
+    font-size: 1.1rem;
+}
+
+.search-task,
+.sort-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-sort-section input 
+{
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.display-all-task 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.todo-task,
+.In-Process-Task,
+.All-Completed-task
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+}
+
+.task-doto-done
+{
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/*-------------All tasks----------------*/
+
+.todo-lists-data 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.AllWork-lists-data-grid 
+{
+  background-color: rgb(152, 152, 183);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+}
+
+.Apply-Operations 
+{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+
+.Apply-Operations .Delete,
+.Apply-Operations .Edit,
+.Apply-Operations .View-Details
+{
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*----------------------------Reponsive--------------------------*/
+
+@media screen and (max-width:550px)
+{
+    .Add-Task-Button button 
+    {
+      width: 30%;
+       font-size: 0.6rem;
+    }  
+
+    .search-sort-section label,
+    .search-sort-section select
+    {
+      font-size: 14px;
+    }
+
+    .search-sort-section input 
+    {
+      font-size: 12px;
+    }
+
+    .display-all-task 
+    {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width:450px)
+{
+   .search-sort-section 
+   {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+   }  
+
+   .search-sort-section label,
+    .search-sort-section select
+    {
+      font-size: 12px;
+    }
+
+    .search-sort-section input 
+    {
+      font-size: 10px;
+      border: 1px solid black;
+    }
+
+    .search-task,
+    .sort-form
+    {
+      display: flex;
+      gap: 10px;
+    }
+
+}

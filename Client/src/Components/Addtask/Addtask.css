@@ -1,0 +1,96 @@
+.Add-new-Product {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+.Product-Details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title-name-user {
+  text-align: center;
+}
+
+.Product-Details form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.Product-Details input {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.Product-Details input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.Product-inputs,
+.Product-Description,
+.form-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.form-button button {
+  padding: 0.4rem;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.Close-Page-Button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  width: 30%;
+  margin: 0 auto;
+  border: none;
+}
+
+
+/*----------------Responsive-----------*/
+
+@media screen and (max-width:850px)
+{
+  .Product-inputs,
+  .Product-Description,
+  .form-button,
+  .Close-Page-Button
+   {
+    
+    width: 40%;
+  }
+}
+
+
+@media screen and (max-width:580px)
+{
+  .Product-inputs,
+  .Product-Description,
+  .form-button,
+  .Close-Page-Button
+   {
+    
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .Product-Details input {
+    font-size: 10px;
+  }
+}
