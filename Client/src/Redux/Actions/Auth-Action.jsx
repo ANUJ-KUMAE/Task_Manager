@@ -24,7 +24,7 @@ const RegisterAction = (newUser) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5083/auth/User/registerNew",
+      "/auth/User/registerNew",
       newUser,
       configData
     );
@@ -53,7 +53,7 @@ const LoginAction = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5083/auth/User/loginUser",
+      "/auth/User/loginUser",
       { email, password },
       configData
     );
@@ -83,7 +83,7 @@ const LoadLoginUser = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "http://localhost:5083/auth/User/Loginuserdata",
+      "/auth/User/Loginuserdata",
       configData
     );
 

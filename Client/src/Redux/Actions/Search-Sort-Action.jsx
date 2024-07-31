@@ -16,7 +16,7 @@ const SearchAction = (value) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:5083/api/work/searchData/${value}`,
+      `/api/work/searchData/${value}`,
       configData
     );
 

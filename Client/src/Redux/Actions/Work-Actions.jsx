@@ -32,7 +32,7 @@ const GetAllTaskData = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "http://localhost:5083/api/work/viewAlltask",
+      "/api/work/viewAlltask",
       configData
     );
 
@@ -63,7 +63,7 @@ const GetSingleTaskData = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:5083/api/work/getSingleTask/${id}`,
+      `/api/work/getSingleTask/${id}`,
       configData
     );
 
@@ -94,7 +94,7 @@ const AdduserNewtask = (taskData) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5083/api/work/addTask",
+      "/api/work/addTask",
       taskData,
       configData
     );
@@ -126,7 +126,7 @@ const TaskDeleted = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `http://localhost:5083/api/work/deleteTask/${id}`,
+      `/api/work/deleteTask/${id}`,
       configData
     );
 
@@ -157,7 +157,7 @@ const TaskUpdate = (id, taskdata) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `http://localhost:5083/api/work/updatetask/${id}`,
+      `/api/work/updatetask/${id}`,
       taskdata,
       configData
     );
