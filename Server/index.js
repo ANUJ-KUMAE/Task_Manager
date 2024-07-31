@@ -12,7 +12,7 @@ require("./Passport/passport");
 const app = express();
 
 var corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://task-manager-client-eight.vercel.app",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
