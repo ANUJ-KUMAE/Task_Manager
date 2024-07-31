@@ -52,7 +52,7 @@ const Login = () => {
   };
 
   const LoginWithGoogle = () => {
-    window.open("http://localhost:5083/auth/User/google", "_self");
+    window.open("https://task-manager-api-silk.vercel.app/auth/User/google", "_self");
   };
 
   return (

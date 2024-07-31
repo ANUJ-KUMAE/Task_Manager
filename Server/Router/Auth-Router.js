@@ -23,8 +23,8 @@ router.get(
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    successRedirect: "http://localhost:5173/home",
-    failureRedirect: "http://localhost:5173/",
+    successRedirect: "https://task-manager-client-eight.vercel.app/home",
+    failureRedirect: "https://task-manager-client-eight.vercel.app/",
   })
 );
 
