@@ -24,7 +24,7 @@ const RegisterAction = (newUser) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/auth/User/registerNew",
+      "https://task-manager-api-silk.vercel.app/auth/User/registerNew",
       newUser,
       configData
     );
@@ -53,7 +53,7 @@ const LoginAction = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/auth/User/loginUser",
+      "https://task-manager-api-silk.vercel.app/auth/User/loginUser",
       { email, password },
       configData
     );
@@ -83,7 +83,7 @@ const LoadLoginUser = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "/auth/User/Loginuserdata",
+      "https://task-manager-api-silk.vercel.app/auth/User/Loginuserdata",
       configData
     );
 

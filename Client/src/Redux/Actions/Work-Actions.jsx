@@ -32,7 +32,7 @@ const GetAllTaskData = () => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      "/api/work/viewAlltask",
+      "https://task-manager-api-silk.vercel.app/api/work/viewAlltask",
       configData
     );
 
@@ -63,7 +63,7 @@ const GetSingleTaskData = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `/api/work/getSingleTask/${id}`,
+      `https://task-manager-api-silk.vercel.app/api/work/getSingleTask/${id}`,
       configData
     );
 
@@ -94,7 +94,7 @@ const AdduserNewtask = (taskData) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/work/addTask",
+      "https://task-manager-api-silk.vercel.app/api/work/addTask",
       taskData,
       configData
     );
@@ -126,7 +126,7 @@ const TaskDeleted = (id) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `/api/work/deleteTask/${id}`,
+      `https://task-manager-api-silk.vercel.app/api/work/deleteTask/${id}`,
       configData
     );
 
@@ -157,7 +157,7 @@ const TaskUpdate = (id, taskdata) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `/api/work/updatetask/${id}`,
+      `https://task-manager-api-silk.vercel.app/api/work/updatetask/${id}`,
       taskdata,
       configData
     );

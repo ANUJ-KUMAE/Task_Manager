@@ -16,7 +16,7 @@ const SearchAction = (value) => async (dispatch) => {
     };
 
     const { data } = await axios.get(
-      `/api/work/searchData/${value}`,
+      `https://task-manager-api-silk.vercel.app/api/work/searchData/${value}`,
       configData
     );
 
